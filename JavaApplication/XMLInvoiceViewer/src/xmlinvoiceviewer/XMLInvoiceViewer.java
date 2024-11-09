@@ -50,31 +50,28 @@ public class XMLInvoiceViewer {
 
 
         // Crear el modelo de tabla con columnas visibles y ocultas
-        String[] columnNames = {"Proveedor", "Número de Factura", "Fecha", "Fecha de Vencimiento", "Nombre del Item", "Cantidad", "Total en Pesos", "Centro de Costos", "Valor", "IVA"};
+        String[] columnNames = {"NIT","Proveedor", "Número de Factura", "Fecha", "Fecha de Vencimiento", "Nombre del Item", "Cantidad", "Total en Pesos", "Centro de Costos", "Valor", "IVA"};
         tableModel = new DefaultTableModel(columnNames, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {
                 // Hacer que las columnas "Valor" e "IVA" no sean visibles en la interfaz gráfica
-                return column < 8;
+                return column < 11;
             }
         };
         table = new JTable(tableModel);
 
-        // Ocultar las columnas "Valor" e "IVA" en la interfaz gráfica
-        table.removeColumn(table.getColumnModel().getColumn(8));
-        table.removeColumn(table.getColumnModel().getColumn(8));
 
         // Estilo de la tabla
         table.setBackground(new Color(240, 245, 250)); // Fondo azul muy claro
         table.setForeground(Color.DARK_GRAY); // Texto gris oscuro
-        table.setFont(new Font("Arial", Font.PLAIN, 14));
+        table.setFont(new Font("Segoe UI", Font.PLAIN, 14));
         table.getTableHeader().setBackground(new Color(100, 130, 180)); // Azul medio
         table.getTableHeader().setForeground(Color.WHITE); // Texto blanco en encabezado
-        table.getTableHeader().setFont(new Font("Arial", Font.BOLD, 16));
+        table.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 16));
 
         // Configurar la columna "Centro de Costos" para usar JComboBox como editor de celdas
-        TableColumn centroCostosColumn = table.getColumnModel().getColumn(7);
-        JComboBox<String> comboBox = new JComboBox<>(new String[]{"Administración", "Deposito", "Parqueadero", "SZU-505", "STA-068", "STE-436", "STE-456", "STE-421", "TTZ-648", "WCP-392", "UIC-841", "TNH-287", "SZV-209", "GDX-212"});
+        TableColumn centroCostosColumn = table.getColumnModel().getColumn(8);
+        JComboBox<String> comboBox = new JComboBox<>(new String[]{"Administracion","APROVECHAMIENTO","Almacen","","Deposito", "Parqueadero", "SZU-505", "STA-068","DIEGO GIRALDO","RETRO 135 HITACHI DIEGO GIRALDO","RETRO 200 HITACHI DIEGO GIRALDO" ,"STE-436", "STE-456", "STE-421", "TTZ-648", "WCP-392", "UIC-841","RETRO 416B", "TNH-287", "SZV-209", "GDX-212"});
         centroCostosColumn.setCellEditor(new DefaultCellEditor(comboBox));
 
         // Agregar la tabla a un scroll pane
@@ -89,7 +86,7 @@ public class XMLInvoiceViewer {
         compradorPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
         compradorPanel.add(new JLabel("Comprador: "));
         compradorComboBox = new JComboBox<>(new String[]{"LEONARDO ANTONIO GONZALEZ CARMONA", "TRANSPORTES Y VOLQUETAS GONZALEZ SAS", "GRUPO NUTABE SAS"}); // Agregar más compradores aquí
-        compradorComboBox.setFont(new Font("Arial", Font.BOLD, 14));
+        compradorComboBox.setFont(new Font("Segoe UI", Font.BOLD, 14));
         compradorComboBox.setBackground(new Color(204, 255, 204)); // Fondo verde claro
         compradorComboBox.setForeground(Color.BLACK); // Texto negro
         compradorPanel.add(compradorComboBox);
@@ -102,28 +99,46 @@ public class XMLInvoiceViewer {
         JButton selectFolderButton = new JButton("Seleccionar Carpeta");
         JButton exportToExcelButton = new JButton("Exportar a Excel");
         JButton verErroresButton = new JButton("Ver Archivos con Errores");
+        JButton eliminarRegistroButton = new JButton("Eliminar Registro");
+        JButton eliminarRegistrosButton = new JButton("Eliminar Registros Seleccionados");
+
 
         // Estilo de los botones
         selectFileButton.setBackground(new Color(255, 140, 0)); // Naranja claro
-        selectFileButton.setForeground(Color.BLACK); // Texto negro
-        selectFileButton.setFont(new Font("Arial", Font.BOLD, 14));
+        selectFileButton.setForeground(Color.WHITE); // Texto negro
+        selectFileButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
 
         selectFolderButton.setBackground(new Color(255, 140, 0)); // Naranja claro
-        selectFolderButton.setForeground(Color.BLACK); // Texto negro
-        selectFolderButton.setFont(new Font("Arial", Font.BOLD, 14));
+        selectFolderButton.setForeground(Color.WHITE); // Texto negro
+        selectFolderButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
 
+        eliminarRegistroButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        eliminarRegistroButton.setForeground(Color.WHITE); // Texto blanco
+        eliminarRegistroButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        
+        eliminarRegistrosButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        eliminarRegistrosButton.setForeground(Color.WHITE); // Texto blanco
+        eliminarRegistrosButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        
+
+        
         exportToExcelButton.setBackground(new Color(255, 140, 0)); // Naranja claro
         exportToExcelButton.setForeground(Color.WHITE); // Texto blanco
-        exportToExcelButton.setFont(new Font("Arial", Font.BOLD, 14));
+        exportToExcelButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        
+        
 
         verErroresButton.setBackground(new Color(255, 140, 0)); // Naranja claro
-        verErroresButton.setForeground(Color.BLACK); // Texto negro
-        verErroresButton.setFont(new Font("Arial", Font.BOLD, 14));
+        verErroresButton.setForeground(Color.WHITE); // Texto negro
+        verErroresButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
 
         buttonPanel.add(selectFileButton);
         buttonPanel.add(selectFolderButton);
         buttonPanel.add(exportToExcelButton);
         buttonPanel.add(verErroresButton);
+        buttonPanel.add(eliminarRegistroButton);
+        buttonPanel.add(eliminarRegistrosButton);
+
         frame.add(buttonPanel, BorderLayout.SOUTH);
 
         // Acción para seleccionar un archivo XML
@@ -186,6 +201,31 @@ public class XMLInvoiceViewer {
                 }
             }
         });
+        eliminarRegistroButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int selectedRow = table.getSelectedRow();
+                if (selectedRow != -1) {
+                    tableModel.removeRow(selectedRow);
+                } else {
+                    JOptionPane.showMessageDialog(frame, "Seleccione un registro para eliminar.", "Eliminar Registro", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+         eliminarRegistrosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int[] selectedRows = table.getSelectedRows();
+                if (selectedRows.length > 0) {
+                    for (int i = selectedRows.length - 1; i >= 0; i--) {
+                        tableModel.removeRow(selectedRows[i]);
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(frame, "Seleccione registros para eliminar.", "Eliminar Registros", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
 
         // Mostrar la ventana principal
         frame.setVisible(true);
@@ -208,7 +248,7 @@ public class XMLInvoiceViewer {
             String idFactura = (String) xPath.evaluate("//*[local-name()='ID']", doc, XPathConstants.STRING);
             String fechaEmision = (String) xPath.evaluate("//*[local-name()='IssueDate']", doc, XPathConstants.STRING);
             String fechaVencimiento = (String) xPath.evaluate("//*[local-name()='DueDate']", doc, XPathConstants.STRING);
-            String nit = (String) xPath.evaluate("//*[local-name()='AccountingSupplierParty']/*[local-name()='Party']/*[local-name()='PartyTaxScheme']/*[local-name()='CompanyID']", doc, XPathConstants.STRING);
+            String nit = (String) xPath.evaluate("//*[local-name()='PartyTaxScheme']/*[local-name()='CompanyID']", doc, XPathConstants.STRING);
             if (nit != null) {
                 nit = nit.trim(); // Asegurar que el NIT se extrae correctamente
             }
@@ -233,7 +273,22 @@ public class XMLInvoiceViewer {
                     String totalEnPesos = currencyFormat.format(totalDouble);
 
                     // Agregar los datos a la tabla, incluyendo "Valor" e "IVA" (aunque no se muestren en la interfaz)
-                    tableModel.addRow(new Object[]{proveedor, idFactura, fechaEmision, fechaVencimiento, nombreItem, cantidad, totalEnPesos, "Administración", valor, iva});
+
+                                    tableModel.addRow(new Object[]{
+                    nit,                 
+                    proveedor,           
+                    idFactura,           
+                    fechaEmision,        
+                    fechaVencimiento,    
+                    nombreItem,          
+                    cantidad,            
+                    totalEnPesos,        
+                    "Administracion",    
+                    valor,               
+                    iva                 
+                });
+                    
+                    
                 }
             }
         } catch (Exception e) {
@@ -244,68 +299,56 @@ public class XMLInvoiceViewer {
     }
 
     private void exportarTablaAExcel(File directory) {
-        Workbook workbook = new XSSFWorkbook();
-        Sheet sheet = workbook.createSheet("Facturas");
+    Workbook workbook = new XSSFWorkbook();
+    Sheet sheet = workbook.createSheet("Facturas");
 
-        // Crear la fila de encabezado
-        Row headerRow = sheet.createRow(0);
-        String[] exportColumns = {"NIT", "Comprador", "Proveedor", "Número de Factura", "Fecha", "Fecha de Vencimiento", "Nombre del Item", "Cantidad", "Valor", "IVA", "Centro de Costos"};
-        for (int i = 0; i < exportColumns.length; i++) {
-            Cell cell = headerRow.createCell(i);
-            cell.setCellValue(exportColumns[i]);
-        }
-
-        // Rellenar las filas con los datos de la tabla
-        String comprador = (String) compradorComboBox.getSelectedItem(); // Obtener el comprador seleccionado
-        for (int i = 0; i < tableModel.getRowCount(); i++) {
-            Row row = sheet.createRow(i + 1);
-            int colIndex = 0;
-
-            // Agregar la columna de NIT al principio
-            String nit = (String) tableModel.getValueAt(i, 7); // Obtener el NIT desde la tabla
-            Cell nitCell = row.createCell(colIndex++);
-            nitCell.setCellValue(nit);
-
-            // Agregar la columna de comprador
-            Cell compradorCell = row.createCell(colIndex++);
-            compradorCell.setCellValue(comprador);
-
-            // Obtener datos de la tabla y agregar valores e IVA para exportar
-            String proveedor = (String) tableModel.getValueAt(i, 0);
-            String idFactura = (String) tableModel.getValueAt(i, 1);
-            String fecha = (String) tableModel.getValueAt(i, 2);
-            String fechaVencimiento = (String) tableModel.getValueAt(i, 3);
-            String nombreItem = (String) tableModel.getValueAt(i, 4);
-            String cantidad = (String) tableModel.getValueAt(i, 5);
-            String valor = (String) tableModel.getValueAt(i, 9);
-            String iva = (String) tableModel.getValueAt(i, 9);
-            String centroCostos = (String) tableModel.getValueAt(i, 7);
-
-            // Agregar datos a las celdas del Excel
-            row.createCell(colIndex++).setCellValue(proveedor);
-            row.createCell(colIndex++).setCellValue(idFactura);
-            row.createCell(colIndex++).setCellValue(fecha);
-            row.createCell(colIndex++).setCellValue(fechaVencimiento);
-            row.createCell(colIndex++).setCellValue(nombreItem);
-            row.createCell(colIndex++).setCellValue(cantidad);
-            row.createCell(colIndex++).setCellValue(valor);
-            row.createCell(colIndex++).setCellValue(iva);
-            row.createCell(colIndex++).setCellValue(centroCostos);
-        }
-
-        // Guardar el archivo Excel en la carpeta seleccionada
-        try {
-            FileOutputStream fileOut = new FileOutputStream(new File(directory, "facturas.xlsx"));
-            workbook.write(fileOut);
-            fileOut.close();
-            workbook.close();
-            JOptionPane.showMessageDialog(frame, "Exportado a Excel exitosamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
-        } catch (IOException e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(frame, "Error al exportar a Excel", "Error", JOptionPane.ERROR_MESSAGE);
-        }
+    // Crear la fila de encabezado
+    Row headerRow = sheet.createRow(0);
+    String[] exportColumns = { "NIT", "Comprador", "Proveedor", "Número de Factura", "Fecha", "Fecha de Vencimiento", "Nombre del Item", "Cantidad", "Total en Pesos", "Centro de Costos", "Valor", "IVA"};
+    for (int i = 0; i < exportColumns.length; i++) {
+        Cell cell = headerRow.createCell(i);
+        cell.setCellValue(exportColumns[i]);
     }
 
+    // Obtener el comprador seleccionado
+    String comprador = (String) compradorComboBox.getSelectedItem();
+
+    // Rellenar las filas con los datos de la tabla
+    for (int i = 0; i < tableModel.getRowCount(); i++) {
+        Row row = sheet.createRow(i + 1);
+        int colIndex = 0;
+
+        // Escribir los datos en el mismo orden que las columnas de la tabla
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 0)); // NIT
+        row.createCell(colIndex++).setCellValue(comprador); // Comprador
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 1)); // Proveedor
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 2)); // Número de Factura
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 3)); // Fecha
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 4)); // Fecha de Vencimiento
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 5)); // Nombre del Item
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 6)); // Cantidad
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 7)); // Total en Pesos
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 8)); // Centro de Costos
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 9)); // Valor
+        row.createCell(colIndex++).setCellValue((String) tableModel.getValueAt(i, 10)); // IVA
+    }
+
+    // Guardar el archivo Excel en la carpeta seleccionada
+    try {
+        FileOutputStream fileOut = new FileOutputStream(new File(directory, "facturas.xlsx"));
+        workbook.write(fileOut);
+        fileOut.close();
+        workbook.close();
+        JOptionPane.showMessageDialog(frame, "Exportado a Excel exitosamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+    } catch (IOException e) {
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(frame, "Error al exportar a Excel", "Error", JOptionPane.ERROR_MESSAGE);
+    }
+}
+
+    
+    
+    
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new XMLInvoiceViewer());
     }
