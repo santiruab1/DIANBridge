@@ -71,7 +71,7 @@ public class XMLInvoiceViewer {
 
         // Configurar la columna "Centro de Costos" para usar JComboBox como editor de celdas
         TableColumn centroCostosColumn = table.getColumnModel().getColumn(8);
-        JComboBox<String> comboBox = new JComboBox<>(new String[]{"Administración", "Deposito", "Parqueadero", "SZU-505", "STA-068", "STE-436", "STE-456", "STE-421", "TTZ-648", "WCP-392", "UIC-841", "TNH-287", "SZV-209", "GDX-212"});
+        JComboBox<String> comboBox = new JComboBox<>(new String[]{"Administracion","APROVECHAMIENTO","Almacen","","Deposito", "Parqueadero", "SZU-505", "STA-068","DIEGO GIRALDO","RETRO 135 HITACHI DIEGO GIRALDO","RETRO 200 HITACHI DIEGO GIRALDO" ,"STE-436", "STE-456", "STE-421", "TTZ-648", "WCP-392", "UIC-841","RETRO 416B", "TNH-287", "SZV-209", "GDX-212"});
         centroCostosColumn.setCellEditor(new DefaultCellEditor(comboBox));
 
         // Agregar la tabla a un scroll pane
@@ -227,11 +227,6 @@ public class XMLInvoiceViewer {
         });
 
 
-        
-        
-        
-        
-
         // Mostrar la ventana principal
         frame.setVisible(true);
     }
@@ -288,7 +283,7 @@ public class XMLInvoiceViewer {
                     nombreItem,          
                     cantidad,            
                     totalEnPesos,        
-                    "Administración",    
+                    "Administracion",    
                     valor,               
                     iva                 
                 });
