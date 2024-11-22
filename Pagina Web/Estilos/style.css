@@ -1,0 +1,143 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navegacion ul
+{
+    display: flex;
+    list-style: none; 
+    justify-content: right;
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#navegacion li
+{
+    margin: 5px;
+    border: solid 1px #009dff;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #80ceff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 0.9rem;
+}
+
+main
+{
+    background-color: #e6f5ff;
+    padding-inline: 10%;
+    padding-block: 2%;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+@font-face
+{
+    font-family: 'Roboto';
+    src: url(./Fuentes/Roboto-Regular.ttf) format('truetype');
+}
+
+h1
+{
+    font-size: 2.5rem;
+    margin-block: 15px;
+}
+
+h2
+{
+    font-size: 1.5rem;
+    margin-block: 12px;
+}
+
+h3
+{
+    font-size: 1.3rem;
+    margin-block: 10px;
+}
+
+p
+{
+    margin-block: 8px;
+    font-size: 1.1rem;
+}
+
+#sobreNosotros li
+{
+    list-style: none;
+    margin-block: 8px;
+}
+
+li
+{
+    list-style: none;
+}
+
+#planesPrecios
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.box
+{
+    border: solid 1px #009dff;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    flex: 1;
+    text-align: justify;
+    background-color: #80ceff;
+}
+
+.box h3
+{
+    text-align: center;
+    
+}
+
+.box li
+{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.box {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+
