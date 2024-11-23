@@ -1,0 +1,134 @@
+#background {
+    background-color: #F2F2F2;
+    color: black;
+}
+
+/* Header */
+
+header ul li {
+    padding: 0 15px;
+    font-size: large;
+}
+
+
+
+/* Container principal */
+.container {
+    margin-top: 100px; /* Espaciado para evitar superposición con el header */
+}
+
+/* Tablas */
+.table {
+    margin: 0 auto; /* Centra la tabla */
+    max-width: 100%; /* Asegura que la tabla sea responsiva */
+}
+
+/* Contenedor del Login */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    min-height: 80vh; /* Ajusta la altura dinámica */
+}
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del Carousel */
+.carousel-container {
+    padding: 20px;
+}
+
+.small-carousel {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-carousel .carousel-inner img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Controles del Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Footer */
+footer {
+    background-color: #0A0E45;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    header ul li {
+        padding: 5px 0;
+    }
+
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-box {
+        max-width: 300px;
+    }
+
+    .small-carousel {
+        max-width: 100%;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-box {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
