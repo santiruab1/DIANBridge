@@ -46,7 +46,7 @@ public class XMLInvoiceViewer {
         archivosConErrores = new ArrayList<>();
 
         // Estilo visual de la ventana principal
-        frame.getContentPane().setBackground(new Color(230, 230, 240)); // Fondo gris claro
+        frame.getContentPane().setBackground(new Color(192, 205, 251)); 
 
 
         // Crear el modelo de tabla con columnas visibles y ocultas
@@ -62,11 +62,11 @@ public class XMLInvoiceViewer {
 
 
         // Estilo de la tabla
-        table.setBackground(new Color(240, 245, 250)); // Fondo azul muy claro
-        table.setForeground(Color.DARK_GRAY); // Texto gris oscuro
+        table.setBackground(new Color(240, 245, 250)); 
+        table.setForeground(Color.BLACK); 
         table.setFont(new Font("Segoe UI", Font.PLAIN, 14));
-        table.getTableHeader().setBackground(new Color(100, 130, 180)); // Azul medio
-        table.getTableHeader().setForeground(Color.WHITE); // Texto blanco en encabezado
+        table.getTableHeader().setBackground(new Color(240, 245, 250 )); 
+        table.getTableHeader().setForeground(Color.BLACK); 
         table.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 16));
 
         // Configurar la columna "Centro de Costos" para usar JComboBox como editor de celdas
@@ -82,19 +82,19 @@ public class XMLInvoiceViewer {
 
         // Crear el selector de comprador
         JPanel compradorPanel = new JPanel();
-        compradorPanel.setBackground(new Color(204, 255, 204)); // Fondo verde claro
+        compradorPanel.setBackground(new Color(26, 82, 118));
         compradorPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
         compradorPanel.add(new JLabel("Comprador: "));
         compradorComboBox = new JComboBox<>(new String[]{"LEONARDO ANTONIO GONZALEZ CARMONA", "TRANSPORTES Y VOLQUETAS GONZALEZ SAS", "GRUPO NUTABE SAS"}); // Agregar más compradores aquí
         compradorComboBox.setFont(new Font("Segoe UI", Font.BOLD, 14));
-        compradorComboBox.setBackground(new Color(204, 255, 204)); // Fondo verde claro
-        compradorComboBox.setForeground(Color.BLACK); // Texto negro
+        compradorComboBox.setBackground(new Color(26, 82, 118)); 
+        compradorComboBox.setForeground(Color.WHITE); // Texto blanco
         compradorPanel.add(compradorComboBox);
         frame.add(compradorPanel, BorderLayout.NORTH);
 
         // Crear botones para seleccionar archivo o carpeta
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setBackground(new Color(120, 140, 160)); // Azul gris oscuro para el fondo
+        buttonPanel.setBackground(new Color(26, 82, 118)); // Azul gris oscuro para el fondo
         JButton selectFileButton = new JButton("Seleccionar Archivo XML");
         JButton selectFolderButton = new JButton("Seleccionar Carpeta");
         JButton exportToExcelButton = new JButton("Exportar a Excel");
@@ -104,31 +104,31 @@ public class XMLInvoiceViewer {
 
 
         // Estilo de los botones
-        selectFileButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        selectFileButton.setBackground(new Color(40, 116, 166)); // Azul oscuro
         selectFileButton.setForeground(Color.WHITE); // Texto negro
         selectFileButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
 
-        selectFolderButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        selectFolderButton.setBackground(new Color(40, 116, 166)); // Azul oscuro    
         selectFolderButton.setForeground(Color.WHITE); // Texto negro
         selectFolderButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
 
-        eliminarRegistroButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        eliminarRegistroButton.setBackground(new Color(40, 116, 166)); // Azul oscuro
         eliminarRegistroButton.setForeground(Color.WHITE); // Texto blanco
         eliminarRegistroButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
         
-        eliminarRegistrosButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        eliminarRegistrosButton.setBackground(new Color(40, 116, 166)); // Azul oscuro
         eliminarRegistrosButton.setForeground(Color.WHITE); // Texto blanco
         eliminarRegistrosButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
         
 
         
-        exportToExcelButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        exportToExcelButton.setBackground(new Color(40, 116, 166)); // Azul oscuro
         exportToExcelButton.setForeground(Color.WHITE); // Texto blanco
         exportToExcelButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
         
         
 
-        verErroresButton.setBackground(new Color(255, 140, 0)); // Naranja claro
+        verErroresButton.setBackground(new Color(40, 116, 166)); // Azul oscuro
         verErroresButton.setForeground(Color.WHITE); // Texto negro
         verErroresButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
 

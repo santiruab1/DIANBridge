@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Invoice xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<ext:UBLExtensions>
+		<ext:UBLExtension>
+			<ext:ExtensionContent>
+				<sts:DianExtensions xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1">
+					<sts:InvoiceControl>
+						<sts:InvoiceAuthorization>18764053800971</sts:InvoiceAuthorization>
+						<sts:AuthorizationPeriod>
+							<cbc:StartDate>2023-08-15</cbc:StartDate>
+							<cbc:EndDate>2024-08-15</cbc:EndDate>
+						</sts:AuthorizationPeriod>
+						<sts:AuthorizedInvoices>
+							<sts:Prefix>FE</sts:Prefix>
+							<sts:From>20001</sts:From>
+							<sts:To>30000</sts:To>
+						</sts:AuthorizedInvoices>
+					</sts:InvoiceControl>
+					<sts:InvoiceSource>
+						<cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+					</sts:InvoiceSource>
+					<sts:SoftwareProvider>
+						<sts:ProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">811021438</sts:ProviderID>
+						<sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">def923e2-8326-42e2-a022-d0fa4a2f8188</sts:SoftwareID>
+					</sts:SoftwareProvider>
+					<sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">99fa65920dd81bf160f9ce85046bbbdb0a5d4a96350005d8fdcb27e2c609135516927cd549e85757d6f0fa978daa812e</sts:SoftwareSecurityCode>
+					<sts:AuthorizationProvider>
+						<sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">800197268</sts:AuthorizationProviderID>
+					</sts:AuthorizationProvider>
+					<sts:QRCode>https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=2cdc02c19930925e0d82b0cd68640aaf481c617d864f2d77d47122156273bd76191b9ea22aa795bc53ce9755b98141b2</sts:QRCode>
+				</sts:DianExtensions>
+			</ext:ExtensionContent>
+		</ext:UBLExtension>
+		<ext:UBLExtension>
+			<ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-ref0" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>LGasGrX4jgpStdqGHlSilmd4AeGgbebqnLO4ZK+j5Uk=</ds:DigestValue></ds:Reference><ds:Reference Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-ref1" URI="#KeyInfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>FL2pk9NSSmeOeM9NrVHH6Xn6leLl+s3JjPAuBlxFuX0=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>Axy0Yct0wYVYTQ08XjZmAgrfYax5AAqS7hDoFb0i1mk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-sigvalue">S42wzPkh3vUWICQ/kZqTDFrh3MmVipr2sF7eO2W5XZIaNmvXWOtel1TyolF50neClHDGYG6FHaioC+5rDZaebXaTsHuHSnqaPwtLM+4JclnFmHzqNisT6AeZMegumD6DNnB8T+qwDk10Bv3Q6ueS5momYACCPaLgbS2D5n1p+Fw9vCxjpPQr3UiFi34Li2WUgffhyNeXiC9ja3FPfB27YVzpnGDwoC68X/sybskK3aTbGkbziOrysLDeaJJTF2T4cqJKnIZSlXrxsEboWAllSvaxNeT2aAmoXUgCoLBDWrJK+EQLBepXJ3ZH8Px2rzBzErn0PQFQqer7a5p+6bySQw==</ds:SignatureValue><ds:KeyInfo Id="KeyInfo"><ds:X509Data><ds:X509IssuerSerial><ds:X509IssuerName>CN=AC SUB CERTICAMARA, O=CERTICAMARA S.A, OU=NIT 830084433-7, C=CO, S=DISTRITO CAPITAL, L=BOGOTA, STREET=www.certicamara.com</ds:X509IssuerName><ds:X509SerialNumber>123806470161011159389114879890520474881</ds:X509SerialNumber></ds:X509IssuerSerial><ds:X509SubjectName>CN=LADRILLERA DELTA SAS, C=CO, G=CLAUDIA, L=MEDELLIN, O=LADRILLERA DELTA SAS, OID.1.3.6.1.4.1.23267.2.2=1035850492, OID.1.3.6.1.4.1.23267.2.3=8000713412, SERIALNUMBER=1916183, OU=FACTURA ELECTRONICA, S=ANTIOQUIA, STREET=KR 106 31 A 116, SN=VARGAS LOPEZ</ds:X509SubjectName><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a"><xades:SignedProperties Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-08-08T12:50:03.689-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>+mctkzIqyV7vjjeM9JjZDsG3E8oQI02HIm7QoqSr65A=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=AC SUB CERTICAMARA, O=CERTICAMARA S.A, OU=NIT 830084433-7, C=CO, S=DISTRITO CAPITAL, L=BOGOTA, STREET=www.certicamara.com</ds:X509IssuerName><ds:X509SerialNumber>123806470161011159389114879890520474881</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>
+	<cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+	<cbc:CustomizationID>10</cbc:CustomizationID>
+	<cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID>
+	<cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+	<cbc:ID>FE26506</cbc:ID>
+	<cbc:UUID schemeID="1" schemeName="CUFE-SHA384">2cdc02c19930925e0d82b0cd68640aaf481c617d864f2d77d47122156273bd76191b9ea22aa795bc53ce9755b98141b2</cbc:UUID>
+	<cbc:IssueDate>2024-08-08</cbc:IssueDate>
+	<cbc:IssueTime>12:44:00-05:00</cbc:IssueTime>
+	<cbc:DueDate>2024-08-08</cbc:DueDate>
+	<cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+	<cbc:Note> 18764053800971 de 2023-08-15 del FE-20001 al FE-30000</cbc:Note>
+	<cbc:Note>COBRAR</cbc:Note>
+	<cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+	<cbc:LineCountNumeric>2</cbc:LineCountNumeric>
+	<cac:InvoicePeriod>
+		<cbc:StartDate>2024-08-01</cbc:StartDate>
+		<cbc:EndDate>2024-08-31</cbc:EndDate>
+	</cac:InvoicePeriod>
+	<cac:OrderReference>
+		<cbc:ID>0</cbc:ID>
+	</cac:OrderReference>
+	<cac:DespatchDocumentReference>
+		<cbc:ID>96100</cbc:ID>
+	</cac:DespatchDocumentReference>
+	<cac:AccountingSupplierParty>
+		<cbc:AdditionalAccountID schemeAgencyID="195">1</cbc:AdditionalAccountID>
+		<cac:Party>
+			<cac:PartyName>
+				<cbc:Name>LADRILLERA DELTA</cbc:Name>
+			</cac:PartyName>
+			<cac:PhysicalLocation>
+				<cac:Address>
+					<cbc:ID>05001</cbc:ID>
+					<cbc:CityName>Medellín</cbc:CityName>
+					<cbc:PostalZone>050001</cbc:PostalZone>
+					<cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+					<cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+					<cac:AddressLine>
+						<cbc:Line>CRA 106 No. 31AA-116</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+						<cbc:Name languageID="es">Colombia</cbc:Name>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+			<cac:PartyTaxScheme>
+				<cbc:RegistrationName>LADRILLERA DELTA S.A.S</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="2" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800071341</cbc:CompanyID>
+				<cbc:TaxLevelCode>R-99-PN</cbc:TaxLevelCode>
+				<cac:RegistrationAddress>
+					<cbc:ID>05001</cbc:ID>
+					<cbc:CityName>Medellín</cbc:CityName>
+					<cbc:PostalZone>050001</cbc:PostalZone>
+					<cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+					<cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+					<cac:AddressLine>
+						<cbc:Line>CRA 106 No. 31AA-116</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+						<cbc:Name languageID="es">Colombia</cbc:Name>
+					</cac:Country>
+				</cac:RegistrationAddress>
+				<cac:TaxScheme>
+					<cbc:ID>01</cbc:ID>
+					<cbc:Name>IVA</cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>LADRILLERA DELTA S.A.S</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="2" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800071341</cbc:CompanyID>
+				<cac:CorporateRegistrationScheme>
+					<cbc:ID>FE</cbc:ID>
+					<cbc:Name>0</cbc:Name>
+				</cac:CorporateRegistrationScheme>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>3412157</cbc:Telephone>
+				<cbc:ElectronicMail>ventas@ladrilleradelta.com</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cbc:AdditionalAccountID>2</cbc:AdditionalAccountID>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="7" schemeName="13" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Direccion de Impuestos y Aduanas Nacionales)">70322015</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>GONZALEZ CARMONA LEONARDO ANTONIO</cbc:Name>
+			</cac:PartyName>
+			<cac:PhysicalLocation>
+				<cac:Address>
+					<cbc:ID>05308</cbc:ID>
+					<cbc:CityName>Girardota</cbc:CityName>
+					<cbc:PostalZone>051030</cbc:PostalZone>
+					<cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+					<cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+					<cac:AddressLine>
+						<cbc:Line>CR 20 N. 8-07</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+						<cbc:Name languageID="es">Colombia</cbc:Name>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+			<cac:PartyTaxScheme>
+				<cbc:RegistrationName>GONZALEZ CARMONA LEONARDO ANTONIO</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="7" schemeName="13" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">70322015</cbc:CompanyID>
+				<cbc:TaxLevelCode>R-99-PN</cbc:TaxLevelCode>
+				<cac:RegistrationAddress>
+					<cbc:ID>05308</cbc:ID>
+					<cbc:CityName>Girardota</cbc:CityName>
+					<cbc:PostalZone>051030</cbc:PostalZone>
+					<cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+					<cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+					<cac:AddressLine>
+						<cbc:Line>CR 20 N. 8-07</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode>CO</cbc:IdentificationCode>
+						<cbc:Name languageID="es">Colombia</cbc:Name>
+					</cac:Country>
+				</cac:RegistrationAddress>
+				<cac:TaxScheme>
+					<cbc:ID>ZZ</cbc:ID>
+					<cbc:Name>No aplica</cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>GONZALEZ CARMONA LEONARDO ANTONIO</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="7" schemeName="13" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">70322015</cbc:CompanyID>
+				<cac:CorporateRegistrationScheme>
+					<cbc:Name>0</cbc:Name>
+				</cac:CorporateRegistrationScheme>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>2899518</cbc:Telephone>
+				<cbc:ElectronicMail>depositoleonardo@gmail.com</cbc:ElectronicMail>
+			</cac:Contact>
+			<cac:Person>
+				<cbc:FirstName>LEONARDO</cbc:FirstName>
+				<cbc:FamilyName>GONZALEZ CARMONA</cbc:FamilyName>
+				<cbc:MiddleName>ANTONIO</cbc:MiddleName>
+			</cac:Person>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:TaxRepresentativeParty>
+		<cac:PartyIdentification>
+			<cbc:ID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">811021438</cbc:ID>
+		</cac:PartyIdentification>
+	</cac:TaxRepresentativeParty>
+	<cac:PaymentMeans>
+		<cbc:ID>2</cbc:ID>
+		<cbc:PaymentMeansCode>1</cbc:PaymentMeansCode>
+		<cbc:PaymentDueDate>2024-08-08</cbc:PaymentDueDate>
+		<cbc:PaymentID>12345</cbc:PaymentID>
+	</cac:PaymentMeans>
+	<cac:PaymentTerms>
+		<cbc:ID>1</cbc:ID>
+		<cbc:PaymentMeansID>1</cbc:PaymentMeansID>
+		<cbc:Note>Cuota 1 de 1</cbc:Note>
+		<cbc:Amount currencyID="COP">2050000.00000</cbc:Amount>
+		<cbc:PaymentDueDate>2024-08-08</cbc:PaymentDueDate>
+	</cac:PaymentTerms>
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+		<cbc:RoundingAmount currencyID="COP">0.00</cbc:RoundingAmount>
+		<cbc:TaxEvidenceIndicator>false</cbc:TaxEvidenceIndicator>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="COP">2050000.00</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:Percent>0.00</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>01</cbc:ID>
+					<cbc:Name>IVA</cbc:Name>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="COP">2050000.00</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="COP">2050000.00</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="COP">2050000.00</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="COP">0.00</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="COP">0.00</cbc:ChargeTotalAmount>
+		<cbc:PrepaidAmount currencyID="COP">0.00</cbc:PrepaidAmount>
+		<cbc:PayableAmount currencyID="COP">2050000.00</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="94">1000.00</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="COP">1300000.00</cbc:LineExtensionAmount>
+		<cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+			<cbc:RoundingAmount currencyID="COP">0.00</cbc:RoundingAmount>
+			<cbc:TaxEvidenceIndicator>false</cbc:TaxEvidenceIndicator>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="COP">1300000.00</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+				<cac:TaxCategory>
+					<cbc:Percent>0.00</cbc:Percent>
+					<cac:TaxScheme>
+						<cbc:ID>01</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+			<cbc:Description>Ladrillo Horizontal 102040 Primera 3 Huecos</cbc:Description>
+			<cbc:AdditionalInformation></cbc:AdditionalInformation>
+			<cac:SellersItemIdentification>
+				<cbc:ID>HR102040</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">HR102040</cbc:ID>
+			</cac:StandardItemIdentification>
+			<cac:OriginAddress>
+				<cbc:ID></cbc:ID>
+			</cac:OriginAddress>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="COP">1300.000000</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="94">1000.00</cbc:BaseQuantity>
+		</cac:Price>
+	</cac:InvoiceLine>
+	<cac:InvoiceLine>
+		<cbc:ID>2</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="94">200.00</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="COP">750000.00</cbc:LineExtensionAmount>
+		<cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+			<cbc:RoundingAmount currencyID="COP">0.00</cbc:RoundingAmount>
+			<cbc:TaxEvidenceIndicator>false</cbc:TaxEvidenceIndicator>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="COP">750000.00</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="COP">0.00</cbc:TaxAmount>
+				<cac:TaxCategory>
+					<cbc:Percent>0.00</cbc:Percent>
+					<cac:TaxScheme>
+						<cbc:ID>01</cbc:ID>
+						<cbc:Name>IVA</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+			<cbc:Description>Bloquelón 80 x 23 x 8 cm</cbc:Description>
+			<cbc:AdditionalInformation></cbc:AdditionalInformation>
+			<cac:SellersItemIdentification>
+				<cbc:ID>Bloquelon</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:StandardItemIdentification>
+				<cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">Bloquelon</cbc:ID>
+			</cac:StandardItemIdentification>
+			<cac:OriginAddress>
+				<cbc:ID></cbc:ID>
+			</cac:OriginAddress>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="COP">3750.000000</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="94">200.00</cbc:BaseQuantity>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>
