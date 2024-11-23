@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd"><ext:UBLExtensions><ext:UBLExtension><ext:ExtensionContent><sts:DianExtensions><sts:InvoiceControl><sts:InvoiceAuthorization>18764063399372</sts:InvoiceAuthorization><sts:AuthorizationPeriod><cbc:StartDate>2024-01-06</cbc:StartDate><cbc:EndDate>2025-01-06</cbc:EndDate></sts:AuthorizationPeriod><sts:AuthorizedInvoices><sts:Prefix>DMA</sts:Prefix><sts:From>462001</sts:From><sts:To>616000</sts:To></sts:AuthorizedInvoices></sts:InvoiceControl><sts:InvoiceSource><cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode></sts:InvoiceSource><sts:SoftwareProvider><sts:ProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeName="31" schemeID="7">900464969</sts:ProviderID><sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">08467548-e071-4de5-99f8-1b9dcc2eea1b</sts:SoftwareID></sts:SoftwareProvider><sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">ea71fd6c0b35c77d9162596b7b3b538eabbe9ab59e241d2f72932bb386764d180671df62f64566c35d69460d22f136bb</sts:SoftwareSecurityCode><sts:AuthorizationProvider><sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeName="31" schemeID="4">800197268</sts:AuthorizationProviderID></sts:AuthorizationProvider><sts:QRCode>https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=4c1adc149f3506c506c2be38bb9210a04ccc1e4b6a90a850b05ab063d9b92f4e3a3a7f1bc3646b718efdf6e6ccc5028b</sts:QRCode></sts:DianExtensions></ext:ExtensionContent></ext:UBLExtension><ext:UBLExtension><ext:ExtensionContent><ds:Signature Id="Signature">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference Id="REF" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>tJ/FEMjMJp34QIOcIb5foFG6Q81R6GuLSWbcxbTHNZk=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-d9b81613-b494-492a-b62e-36887f59e6f0">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>/DlEjNXVBaJAlhBbScEJGOOAueYnm5l3LqRAQ9olHbU=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#id-d9b81613-b494-492a-b62e-36887f59e6f0">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>/DlEjNXVBaJAlhBbScEJGOOAueYnm5l3LqRAQ9olHbU=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>Jz+dzBxwVXqCf6+SaSQPpyCVRmefQff+107cxS5/n0JjZ91dwjFT55f2AUh/4i2C
+H9RoMScsN9byijjIyQ9JgDA0VudDUQxVfhtjit6xgiD5Sd2grYadTbn33qpGXb9L
+c4CeIEoKdhsZgt/6+bi0KuJ3RsdE80vJYA4q4wKA/whWUuJL8Yu8YsH5YPCuspbx
+wryQXzL8SL7qoFXfatsVJz+lFoEb2n7HGCDA7hZAU2g/NTopFDgwLSzXvtJXfwjc
+TFxxaGRFBG7apQAgL4AH/c4dUtNKnpnlGR2Jw35CW/3WhJPs6DXMX1d3TCDZ6uaG
+B/8ONbBrxFMFYO5w1SuU+A==</ds:SignatureValue>
+<ds:KeyInfo Id="KI">
+<ds:X509Data>
+<ds:X509Certificate>MIIIaDCCBlCgAwIBAgIIaT+hcrPsIJowDQYJKoZIhvcNAQELBQAwgbYxIzAhBgkq
+hkiG9w0BCQEWFGluZm9AYW5kZXNzY2QuY29tLmNvMSYwJAYDVQQDEx1DQSBBTkRF
+UyBTQ0QgUy5BLiBDbGFzZSBJSSB2MjEwMC4GA1UECxMnRGl2aXNpb24gZGUgY2Vy
+dGlmaWNhY2lvbiBlbnRpZGFkIGZpbmFsMRIwEAYDVQQKEwlBbmRlcyBTQ0QxFDAS
+BgNVBAcTC0JvZ290YSBELkMuMQswCQYDVQQGEwJDTzAeFw0yMzA5MDIwNTAwMDBa
+Fw0yNDA5MDEwNDU5MDBaMIIBUzEnMCUGA1UECRMeS00gMiBWSUEgRE9OTUFUSUFT
+IEEgU0FOVEFST1NBMSkwJwYJKoZIhvcNAQkBFhpsZW9uYXJkby5wZW51ZWxhQGFt
+b3ZpbC5jbzEoMCYGA1UEAxMfRElTVFJJQlVDSU9ORVMgUklPR1JBTkRFIFMuQS5T
+LjETMBEGA1UEBRMKODExMDEyMjU4NzE2MDQGA1UEDBMtRW1pc29yIEZhY3R1cmEg
+RWxlY3Ryb25pY2EgLSBQZXJzb25hIEp1cmlkaWNhMTswOQYDVQQLEzJFbWl0aWRv
+IHBvciBBbmRlcyBTQ0QgQWMgMjYgNjkgQyAwMyBUb3JyZSBCIE9mIDcwMTETMBEG
+A1UEChMKRE9OIE1BVElBUzETMBEGA1UEBxMKRE9OIE1BVElBUzESMBAGA1UECBMJ
+QU5USU9RVUlBMQswCQYDVQQGEwJDTzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAML1n9Obu95eccp4HH96Z1S9c4XuM/u1T7hIqlWxF88UcYiyNQuP5fo7
+B3w3ZyBz3z+XZ2WFXM3ctuv7ozAaN4q3TtrRH+8lJ90bfyEHX7Za3yvpBMV+Cv9x
+bTyFjmGl3qw+lBxt8udHSuVsmeBXdAaMAyIBUKrwniNekmADepkEm7y8D/NPiPHz
+23GaSxRDmmKIVpRbeZ7kmJKFDsLXyfVVfI8NoJbPhEsegdcPRnTxC/YgaaP+/5+T
+UVR/ghvMgDkD50MttQomgLZYenNvP36bFeNHUsivQZemJMbqaKhgU06/OPdOMiJJ
+vaBVaZTrc31+hBkfCxpO6CfliEibHDcCAwEAAaOCAtgwggLUMAwGA1UdEwEB/wQC
+MAAwHwYDVR0jBBgwFoAUOldQ0HcbPtaL6v+Xmdf/hAJIKQ8wNwYIKwYBBQUHAQEE
+KzApMCcGCCsGAQUFBzABhhtodHRwOi8vb2NzcC5hbmRlc3NjZC5jb20uY28wJQYD
+VR0RBB4wHIEabGVvbmFyZG8ucGVudWVsYUBhbW92aWwuY28wggG4BgNVHSAEggGv
+MIIBqzCCAVUGDSsGAQQBgfRIAQIGBQAwggFCMIIBPgYIKwYBBQUHAgIwggEwHoIB
+LABMAGEAIAB1AHQAaQBsAGkAegBhAGMAaQDzAG4AIABkAGUAIABlAHMAdABlACAA
+YwBlAHIAdABpAGYAaQBjAGEAZABvACAAZQBzAHQA4QAgAHMAdQBqAGUAdABhACAA
+YQAgAGwAYQAgAFAAQwAgAGQAZQAgAEYAYQBjAHQAdQByAGEAYwBpAPMAbgAgAEUA
+bABlAGMAdAByAPMAbgBpAGMAYQAgAHkAIABEAFAAQwAgAGUAcwB0AGEAYgBsAGUA
+YwBpAGQAYQBzACAAcABvAHIAIABBAG4AZABlAHMAIABTAEMARAAuACAAQwDzAGQA
+aQBnAG8AIABkAGUAIABBAGMAcgBlAGQAaQB0AGEAYwBpAPMAbgA6ACAAMQA2AC0A
+RQBDAEQALQAwADAANDBQBg0rBgEEAYH0SAEBAQcAMD8wPQYIKwYBBQUHAgEWMWh0
+dHBzOi8vd3d3LmFuZGVzc2NkLmNvbS5jby9kb2NzL0RQQ19BbmRlc1NDRC5wZGYw
+HQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMDkGA1UdHwQyMDAwLqAsoCqG
+KGh0dHA6Ly9jcmwuYW5kZXNzY2QuY29tLmNvL0NsYXNlSUl2Mi5jcmwwHQYDVR0O
+BBYEFFMyCJl77ajWSKeciTYE0p4ONN3sMA4GA1UdDwEB/wQEAwIF4DANBgkqhkiG
+9w0BAQsFAAOCAgEAHH/z1LG/ovfHE2to0+HgxvZFg8gHty2CeSLxdGIc5U+8hxo2
+pLgnK2gIgYHym+MISC+gp2PMrO1bYOxGNHU8fzQnIcht1VYcQM2rmsLqbSQ4wTII
+vcYcFvJgtM7XGsWUXV+ZFupHg4WBNlzu4E6TfpSoOUVH8gCCuo3PNWFLXTj8QFqL
+gF57ZKjLvH+AqcXhA2zHAqlSeU7xUf7OS/0F8h/6pAPoKTqy58f7P9v8HqCVYhLp
+whQPPeKPxAjLAI0tU5GJNMIlOn0ZeCDXN3wlC2iSkhbJSrMfL/rQaSeWZ/XAnPdr
+xxRzbq1xtGdxqaT5rmA+ZgrLobg5vfwmu0GtE979odOiI46KOI4zMDiuuGP+xkJH
+200mL6U1nqzwjeMX82fD1Edemos84yPs/RjV2ntlyfiej5kx1lQHOuPiYOOwWcrf
+LIiiG1Jn4NJH3izd9+XkA/7wNI49riopr18ETY/IlLVNAAh2VgIrt8DdLQzxeE7c
+U+U2RQoa3vpSJVoiGFG0NmRfAMj1jcoS0x22tK8DCCzi42LnMjRlCNnUw+Mlk6F6
+tIzXBOFVBxVUx3K+dVHL9W9IvFEYxMlNMWpPziC4zen1jAyGrvJymhI3Q15b3EP/
+5Q2NVv8UmT71VyRaiouZd+RwTqHmPJdE1hAPgZZPf7yhbJBPjI5//B953E0=</ds:X509Certificate>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>C=CO, L=Bogota D.C., O=Andes SCD, OU=Division de certificacion entidad final, CN=CA ANDES SCD S.A. Clase II v2, E=info@andesscd.com.co</ds:X509IssuerName>
+<ds:X509SerialNumber>7583957811532144794</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>wvWf05u73l5xyngcf3pnVL1zhe4z+7VPuEiqVbEXzxRxiLI1C4/l+jsHfDdnIHPf
+P5dnZYVczdy26/ujMBo3irdO2tEf7yUn3Rt/IQdftlrfK+kExX4K/3FtPIWOYaXe
+rD6UHG3y50dK5WyZ4Fd0BowDIgFQqvCeI16SYAN6mQSbvLwP80+I8fPbcZpLFEOa
+YohWlFt5nuSYkoUOwtfJ9VV8jw2gls+ESx6B1w9GdPEL9iBpo/7/n5NRVH+CG8yA
+OQPnQy21CiaAtlh6c28/fpsV40dSyK9Bl6YkxupoqGBTTr84904yIkm9oFVplOtz
+fX6EGR8LGk7oJ+WISJscNw==</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties Target="#Signature" Id="id-d0795873-9b07-44d9-beb2-be71a65580a7"><xades:SignedProperties Id="id-d9b81613-b494-492a-b62e-36887f59e6f0"><xades:SignedSignatureProperties><xades:SigningTime>2024-05-16T21:27:43-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>VqI1QlCcD5idy3xSo+eHgzRV/GinhmmosEjq23jIfYw=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO, L=Bogota D.C., O=Andes SCD, OU=Division de certificacion entidad final, CN=CA ANDES SCD S.A. Clase II v2, E=info@andesscd.com.co</ds:X509IssuerName><ds:X509SerialNumber>7583957811532144794</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description>Política de firma para facturas electrónicas de la República de Colombia</xades:Description></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignatureProductionPlace><xades:StateOrProvince>BCN</xades:StateOrProvince><xades:PostalCode>08000</xades:PostalCode><xades:CountryName>CO</xades:CountryName></xades:SignatureProductionPlace><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>Supp2</xades:ClaimedRole><xades:ClaimedRole>SNE</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent></ext:UBLExtension></ext:UBLExtensions><cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID><cbc:CustomizationID>10</cbc:CustomizationID><cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID><cbc:ProfileExecutionID>1</cbc:ProfileExecutionID><cbc:ID>DMA518226</cbc:ID><cbc:UUID schemeID="1" schemeName="CUFE-SHA384">4c1adc149f3506c506c2be38bb9210a04ccc1e4b6a90a850b05ab063d9b92f4e3a3a7f1bc3646b718efdf6e6ccc5028b</cbc:UUID><cbc:IssueDate>2024-05-16</cbc:IssueDate><cbc:IssueTime>21:27:43-05:00</cbc:IssueTime><cbc:DueDate>2024-05-16</cbc:DueDate><cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode><cbc:Note/><cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode><cbc:LineCountNumeric>2</cbc:LineCountNumeric><cac:AccountingSupplierParty><cbc:AdditionalAccountID schemeAgencyID="195">1</cbc:AdditionalAccountID><cac:Party><cac:PartyName><cbc:Name>DISTRIBUCIONES RIOGRANDE S.A.S. SEDE DONMATIAS</cbc:Name></cac:PartyName><cac:PhysicalLocation><cac:Address><cbc:ID>05237</cbc:ID><cbc:CityName>Donmatías</cbc:CityName><cbc:PostalZone>05237</cbc:PostalZone><cbc:CountrySubentity>Antioquia</cbc:CountrySubentity><cbc:CountrySubentityCode>05</cbc:CountrySubentityCode><cac:AddressLine><cbc:Line>KM 2 VIA DONMATIAS SANTA ROSA</cbc:Line></cac:AddressLine><cac:Country><cbc:IdentificationCode>CO</cbc:IdentificationCode><cbc:Name languageID="es">Colombia</cbc:Name></cac:Country></cac:Address></cac:PhysicalLocation><cac:PartyTaxScheme><cbc:RegistrationName>DISTRIBUCIONES RIOGRANDE S.A.S.</cbc:RegistrationName><cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeName="31" schemeID="7">811012258</cbc:CompanyID><cbc:TaxLevelCode>R-99-PN</cbc:TaxLevelCode><cac:RegistrationAddress><cbc:ID>05237</cbc:ID><cbc:CityName>Donmatías</cbc:CityName><cbc:PostalZone>05237</cbc:PostalZone><cbc:CountrySubentity>Antioquia</cbc:CountrySubentity><cbc:CountrySubentityCode>05</cbc:CountrySubentityCode><cac:AddressLine><cbc:Line>KM 2 VIA DONMATIAS SANTA ROSA</cbc:Line></cac:AddressLine><cac:Country><cbc:IdentificationCode>CO</cbc:IdentificationCode><cbc:Name languageID="es">Colombia</cbc:Name></cac:Country></cac:RegistrationAddress><cac:TaxScheme><cbc:ID>01</cbc:ID><cbc:Name>IVA</cbc:Name></cac:TaxScheme></cac:PartyTaxScheme><cac:PartyLegalEntity><cbc:RegistrationName>DISTRIBUCIONES RIOGRANDE S.A.S.</cbc:RegistrationName><cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeName="31" schemeID="7">811012258</cbc:CompanyID><cac:CorporateRegistrationScheme><cbc:ID>DMA</cbc:ID><cbc:Name>248330</cbc:Name></cac:CorporateRegistrationScheme></cac:PartyLegalEntity><cac:Contact><cbc:ElectronicMail>info@driogrande.com</cbc:ElectronicMail></cac:Contact></cac:Party></cac:AccountingSupplierParty><cac:AccountingCustomerParty><cbc:AdditionalAccountID schemeAgencyID="195">2</cbc:AdditionalAccountID><cac:Party><cac:PartyIdentification><cbc:ID schemeAgencyID="195" schemeName="13">70322015</cbc:ID></cac:PartyIdentification><cac:PartyName><cbc:Name>DEPOSITO LEONARDO GONZALEZ</cbc:Name></cac:PartyName><cac:PhysicalLocation><cac:Address><cbc:ID>05308</cbc:ID><cbc:CityName>Girardota</cbc:CityName><cbc:PostalZone>05308</cbc:PostalZone><cbc:CountrySubentity>Antioquia</cbc:CountrySubentity><cbc:CountrySubentityCode>05</cbc:CountrySubentityCode><cac:AddressLine><cbc:Line>CR 20 8 7</cbc:Line></cac:AddressLine><cac:Country><cbc:IdentificationCode>CO</cbc:IdentificationCode><cbc:Name>Colombia</cbc:Name></cac:Country></cac:Address></cac:PhysicalLocation><cac:PartyTaxScheme><cbc:RegistrationName>LEONARDO ANTONIO GONZALEZ CARDONA</cbc:RegistrationName><cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeName="13">70322015</cbc:CompanyID><cbc:TaxLevelCode>R-99-PN</cbc:TaxLevelCode><cac:TaxScheme><cbc:ID>ZZ</cbc:ID><cbc:Name>No aplica</cbc:Name></cac:TaxScheme></cac:PartyTaxScheme><cac:PartyLegalEntity><cbc:RegistrationName>LEONARDO ANTONIO GONZALEZ CARDONA</cbc:RegistrationName><cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeName="13">70322015</cbc:CompanyID></cac:PartyLegalEntity><cac:Contact><cbc:ElectronicMail>depositoleonardo@gmail.com</cbc:ElectronicMail></cac:Contact></cac:Party></cac:AccountingCustomerParty><cac:PaymentMeans><cbc:ID>1</cbc:ID><cbc:PaymentMeansCode>10</cbc:PaymentMeansCode><cbc:PaymentID>Cr3jYGI4oWdgQqm</cbc:PaymentID></cac:PaymentMeans><cac:TaxTotal><cbc:TaxAmount currencyID="COP">1960.04</cbc:TaxAmount><cac:TaxSubtotal><cbc:TaxableAmount currencyID="COP">10316.00</cbc:TaxableAmount><cbc:TaxAmount currencyID="COP">1960.04</cbc:TaxAmount><cac:TaxCategory><cbc:Percent>19.00</cbc:Percent><cac:TaxScheme><cbc:ID>01</cbc:ID><cbc:Name>IVA</cbc:Name></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal></cac:TaxTotal><cac:LegalMonetaryTotal><cbc:LineExtensionAmount currencyID="COP">39771.00</cbc:LineExtensionAmount><cbc:TaxExclusiveAmount currencyID="COP">10316.00</cbc:TaxExclusiveAmount><cbc:TaxInclusiveAmount currencyID="COP">41731.04</cbc:TaxInclusiveAmount><cbc:AllowanceTotalAmount currencyID="COP">0.00</cbc:AllowanceTotalAmount><cbc:ChargeTotalAmount currencyID="COP">0.00</cbc:ChargeTotalAmount><cbc:PrepaidAmount currencyID="COP">0.00</cbc:PrepaidAmount><cbc:PayableRoundingAmount currencyID="COP">0.00</cbc:PayableRoundingAmount><cbc:PayableAmount currencyID="COP">41731.04</cbc:PayableAmount></cac:LegalMonetaryTotal><cac:InvoiceLine><cbc:ID>1</cbc:ID><cbc:InvoicedQuantity unitCode="GRM">1.00</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="COP">29455.00</cbc:LineExtensionAmount><cac:Item><cbc:Description>MPL X6 UND LCH DESL BOL 1.1L</cbc:Description><cac:SellersItemIdentification><cbc:ID>2971</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">2971</cbc:ID></cac:StandardItemIdentification></cac:Item><cac:Price><cbc:PriceAmount currencyID="COP">29455.00</cbc:PriceAmount><cbc:BaseQuantity unitCode="GRM">1.00</cbc:BaseQuantity></cac:Price></cac:InvoiceLine><cac:InvoiceLine><cbc:ID>2</cbc:ID><cbc:InvoicedQuantity unitCode="GRM">1.00</cbc:InvoicedQuantity><cbc:LineExtensionAmount currencyID="COP">10316.00</cbc:LineExtensionAmount><cac:TaxTotal><cbc:TaxAmount currencyID="COP">1960.04</cbc:TaxAmount><cac:TaxSubtotal><cbc:TaxableAmount currencyID="COP">10316.00</cbc:TaxableAmount><cbc:TaxAmount currencyID="COP">1960.04</cbc:TaxAmount><cac:TaxCategory><cbc:Percent>19.00</cbc:Percent><cac:TaxScheme><cbc:ID>01</cbc:ID><cbc:Name>IVA</cbc:Name></cac:TaxScheme></cac:TaxCategory></cac:TaxSubtotal></cac:TaxTotal><cac:Item><cbc:Description>MP X12 UND YOGO MULTISAB BOL 150G</cbc:Description><cac:SellersItemIdentification><cbc:ID>14097</cbc:ID></cac:SellersItemIdentification><cac:StandardItemIdentification><cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">14097</cbc:ID></cac:StandardItemIdentification></cac:Item><cac:Price><cbc:PriceAmount currencyID="COP">10316.00</cbc:PriceAmount><cbc:BaseQuantity unitCode="GRM">1.00</cbc:BaseQuantity></cac:Price></cac:InvoiceLine></Invoice>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2" xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2     http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceControl>
+            <sts:InvoiceAuthorization>18764037640290</sts:InvoiceAuthorization>
+            <sts:AuthorizationPeriod>
+              <cbc:StartDate>2022-10-10</cbc:StartDate>
+              <cbc:EndDate>2024-04-10</cbc:EndDate>
+            </sts:AuthorizationPeriod>
+            <sts:AuthorizedInvoices>
+              <sts:Prefix>FEPG</sts:Prefix>
+              <sts:From>600001</sts:From>
+              <sts:To>1200000</sts:To>
+            </sts:AuthorizedInvoices>
+          </sts:InvoiceControl>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="6" schemeName="31">900390126</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">82d21092-144e-4b66-b720-6cdf9f661767</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">524b51168a1d0b348eb180af26e68af8ed70b321f397390db780acee91406f9a889f96ff4ce355b2d323914f961c62a5</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+          <sts:QRCode>NumFac: FEPG691974
+FecFac: 2024-03-07
+HorFac: 00:03:00-05:00
+NitFac: 900570964
+DocAdq: 70322015
+ValFac: 525660.00
+ValIva: 99875.00
+ValOtroIm: 0.00
+ValTolFac: 625535.00
+CUFE: 2e1d2ca00136d1686dd865f1670850afa60bba96238c156d35ab68928612cb9b88973b5d7d26f4ef10442c52eb8c4444
+https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=2e1d2ca00136d1686dd865f1670850afa60bba96238c156d35ab68928612cb9b88973b5d7d26f4ef10442c52eb8c4444</sts:QRCode>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature Id="xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6">
+		<ds:SignedInfo>
+		<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+		<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+		<ds:Reference Id="xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6-ref0" URI="">
+		<ds:Transforms>
+		<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+		</ds:Transforms>
+		<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+		<ds:DigestValue>5Rvwqh6dqDwYCSMUrdygf0nlFmJ14zKdSSItcqTZRe4=</ds:DigestValue>
+		</ds:Reference>
+		<ds:Reference URI="#xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6-keyinfo">
+		<ds:Transforms>
+		<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+		</ds:Transforms>
+		<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+		<ds:DigestValue>aj0n57kxJ8qZUI1/hYgHQz14rLzFnFsP1P9Pt/6tSYA=</ds:DigestValue>
+		</ds:Reference>
+		<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6-signedprops">
+		<ds:Transforms>
+		<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+		</ds:Transforms>
+		<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+		<ds:DigestValue>1Br6pIXufSLu737EmEe/9atl9M9gerwPVrINzhhLJ90=</ds:DigestValue>
+		</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue Id="xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6-sigvalue">BThSrTpX+Cm9sh+Orkp8uScGiB6V1SzEzHxXx0AN9uTPEx8ek0XF2sy8aAO0WdK04WS2ioPEAJ5dV0ThM682SLXObrMWktXvnunLHqv/53ugnT/WZVKS/Xh1KMb54MnnHefEEQPQFPi6YegiunmRgFmU510xQyiwtq5GB9qt4kZshROwRP9roPhTKy8JSXKV/pjUQqoFE8a+IJKk1Wrs73t+udxfPPrPJms1f9aINGD+Ct9E6GgBlX3QRPccuEsTnOKx4ADeUd2JcvREtvPjNyo45t2xBcXlAWMlI5Eq3ugXR6cer6PBi+3GONRxLnzX5ikh2PWrN69wr00jeNafHg==</ds:SignatureValue>
+		<ds:KeyInfo Id="xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6-keyinfo">
+		<ds:X509Data>
+		<ds:X509Certificate>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</ds:X509Certificate>
+		</ds:X509Data>
+		</ds:KeyInfo>
+		<ds:Object><xades:QualifyingProperties Target="#xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6"><xades:SignedProperties Id="xmldsig-8e3ec66d-2c56-4969-a97a-9b2f2644f2e6-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-03-07T10:41:01.000-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>RQBGGnpqNs8N/SM+9A2/Zm/G3dnjCP+hUpCU6Nlpd/Y=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v2,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName><ds:X509SerialNumber>1376812606935967419</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description>Política de firma para facturas electrónicas de la República de Colombia</xades:Description></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+		</ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>10</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>FEPG691974</cbc:ID>
+  <cbc:UUID schemeID="1" schemeName="CUFE-SHA384">2e1d2ca00136d1686dd865f1670850afa60bba96238c156d35ab68928612cb9b88973b5d7d26f4ef10442c52eb8c4444</cbc:UUID>
+  <cbc:IssueDate>2024-03-07</cbc:IssueDate>
+  <cbc:IssueTime>00:03:00-05:00</cbc:IssueTime>
+  <cbc:DueDate>2024-03-07</cbc:DueDate>
+  <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+  <cbc:Note>&lt;table   style="width:100%;"&gt;&lt;tr style= "margin: 15px; padding: 15px";&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;ORDEN DE COMPRA: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt;n/a &lt;/td&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;PEDIDO: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt;PVE-604079 &lt;/td&gt;
+                            &lt;/tr&gt;&lt;tr style= "margin: 15px; padding: 15px";&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;REMISION: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt;001RVT961708 &lt;/td&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;PUNTO DE VENTA: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt;ULTRACEM GALAPA &lt;/td&gt;
+                            &lt;/tr&gt;&lt;tr style= "margin: 15px; padding: 15px";&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;FORMA DE PAGO: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt;CONTADO &lt;/td&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;MEDIO DE PAGO: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt; &lt;/td&gt;
+                            &lt;/tr&gt;&lt;tr style= "margin: 15px; padding: 15px";&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;ACTIVIDAD ECONOMICA: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt;2394 - FABRICACIÓN DE CEMENTO CAL Y YESO &lt;/td&gt;
+                              &lt;td style="width:20 %; background-color:white; " &gt;&lt;B&gt;VENDEDOR: &lt;/B&gt;&lt;/td&gt;
+                              &lt;td style="width:80 %; background-color:white; "&gt;MUNERA JARAMILLO FABIO ALBERTO &lt;/td&gt;
+                            &lt;/tr&gt; &lt;/table&gt;
+                                        &lt;table style="width:100%;"&gt; 
+                                           &lt;tr&gt;
+                                             &lt;td style="width:100%; background-color:white;"&gt; &lt;tt&gt;SUCURSAL: DEPOSITO LEONARDO&lt;/tt&gt; &lt;/td&gt;                                         
+                                         &lt;/tr&gt; 
+                                       &lt;/table&gt;
+                                       &lt;table style="width:100%;"&gt; 
+                                           &lt;tr&gt;
+                                             &lt;td style="width:100%; background-color:white;"&gt; &lt;tt&gt;PEDIDO GENERADO POR BOT WHATSAPP - SAGICC - CASO: 793482&lt;/tt&gt; &lt;/td&gt;                                         
+                                         &lt;/tr&gt; 
+                                       &lt;/table&gt;
+                                        &lt;table style="width:100%;"&gt; 
+                                             &lt;tr&gt;                                             
+                                                 &lt;td style="width:100%; background-color:white;"&gt;
+                                                    &lt;BR&gt;&lt;/BR&gt;
+                                                        &lt;B&gt;Autorización Facturación Electrónica DIAN No. 18764037640290 de fecha Oct 10 2022  del FEPG    600001 al FEPG   1200000    IVA Régimen Común
+SOMOS AUTORRETENEDORES SEGUN RESOLUCION 006598 DE AGOSTO 11 DE 2014&lt;br&gt;SOMOS GRANDES CONTRIBUYENTES RESOLUCION No. 76 de 2016.&lt;br&gt;SOMOS RESPONSABLES DE ICA EN EL MUNICIPIO DE GALAPA TARIFA 7 X 1000.&lt;br&gt;LA PRESENTE FACTURA DE VENTA SE ASIMILA EN SUS EFECTOS LEGALES A LA LETRA DE CAMBIO Y DE TITULO VALOR SEGUN LEY 1231 DE 2008.&lt;br&gt;
+                                                        &lt;/B&gt; 
+                                                 &lt;/td&gt; 
+                                             &lt;/tr&gt;                             
+                                        &lt;/table&gt;                                          
+                                         &lt;table style="width:100%;"&gt; .    
+                                        &lt;/table&gt;</cbc:Note>
+  <cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+  <cbc:LineCountNumeric>1</cbc:LineCountNumeric>
+  <cac:OrderReference>
+    <cbc:ID>n/a</cbc:ID>
+    <cbc:SalesOrderID>PVE-604079</cbc:SalesOrderID>
+  </cac:OrderReference>
+  <cac:AccountingSupplierParty>
+    <cbc:AdditionalAccountID schemeAgencyID="195" schemeID="4" schemeName="31">1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cbc:IndustryClassificationCode>2394;2395</cbc:IndustryClassificationCode>
+      <cac:PartyName>
+        <cbc:Name>ULTRACEM S A S </cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>08296</cbc:ID>
+          <cbc:CityName>GALAPA</cbc:CityName>
+          <cbc:PostalZone>082007</cbc:PostalZone>
+          <cbc:CountrySubentity>Atlántico</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>08</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>KM 2 5 VIA CORDIALIDAD BARRANQUILLA - GALAPA</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>ULTRACEM S A S </cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">900570964</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica">O-13;O-15;O-23</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>08296</cbc:ID>
+          <cbc:CityName>GALAPA</cbc:CityName>
+          <cbc:PostalZone>050001</cbc:PostalZone>
+          <cbc:CountrySubentity>Atlántico</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>08</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>KM 2.5 VIA CORDIALIDAD GALAPA</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>ULTRACEM S A S </cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">900570964</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:ID>FEPG</cbc:ID>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>ALCIRA SERRANO</cbc:Name>
+        <cbc:Telephone>53177125</cbc:Telephone>
+        <cbc:Telefax>00000000</cbc:Telefax>
+        <cbc:ElectronicMail>contabilidad@ultracem.co</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyName>
+        <cbc:Name>DEPOSITO LEONARDO</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>05308</cbc:ID>
+          <cbc:CityName>Girardota</cbc:CityName>
+          <cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CRA 20 08 07</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>GONZALEZ CARMONA LEONARDO ANTONIO</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="7" schemeName="31">70322015</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica">R-99-PN</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>05308</cbc:ID>
+          <cbc:CityName>Girardota</cbc:CityName>
+          <cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CRA 20 08 07</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>GONZALEZ CARMONA LEONARDO ANTONIO</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="7" schemeName="31">70322015</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:CorporateRegistrationTypeCode>00001</cbc:CorporateRegistrationTypeCode>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>DEPOSITO LEONARDO</cbc:Name>
+        <cbc:Telephone>3147925494</cbc:Telephone>
+        <cbc:ElectronicMail>depositoleonardo@gmail.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:PaymentMeans>
+    <cbc:ID schemeID="" schemeName="">1</cbc:ID>
+    <cbc:PaymentMeansCode>ZZZ</cbc:PaymentMeansCode>
+    <cbc:InstructionNote>1</cbc:InstructionNote>
+    <cbc:PaymentID>contado</cbc:PaymentID>
+  </cac:PaymentMeans>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="COP">99875.00</cbc:TaxAmount>
+    <cbc:RoundingAmount currencyID="COP">0.00</cbc:RoundingAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="COP">525660.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="COP">99875.00</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="COP">525660.00</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="COP">525660.00</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="COP">625535.00</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="COP">0.00</cbc:AllowanceTotalAmount>
+    <cbc:PayableAmount currencyID="COP">625535.00</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="94">25.00</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">525660.00</cbc:LineExtensionAmount>
+    <cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">99875.00</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">0.00</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">525660.00</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">99875.00</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>CEMENTO GRIS 50 KG USO GENERAL</cbc:Description>
+      <cbc:PackSizeNumeric>1.00</cbc:PackSizeNumeric>
+      <cbc:AdditionalInformation>CEMENTO GRIS 50 KG USO GENERAL</cbc:AdditionalInformation>
+      <cbc:BrandName>HKA</cbc:BrandName>
+      <cac:SellersItemIdentification>
+        <cbc:ID>CEGRISUG50K</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">CEGRISUG50K</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">21026.41</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="WSD">25.00</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>

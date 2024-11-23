@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceControl>
+            <sts:InvoiceAuthorization>18764066638849</sts:InvoiceAuthorization>
+            <sts:AuthorizationPeriod>
+              <cbc:StartDate>2024-03-04</cbc:StartDate>
+              <cbc:EndDate>2025-09-04</cbc:EndDate>
+            </sts:AuthorizationPeriod>
+            <sts:AuthorizedInvoices>
+              <sts:Prefix>FVGE</sts:Prefix>
+              <sts:From>541298</sts:From>
+              <sts:To>1000000</sts:To>
+            </sts:AuthorizedInvoices>
+          </sts:InvoiceControl>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="3" schemeName="31">800088155</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">1a197f09-5b34-4985-8ab6-3d87c0a58af6</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">618146a0033466547b97a1fa7d1fd7ed35add508ba832342e8b5709fbc7aef5f397ea0dd731d571d00f7734a8882e351</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+          <sts:QRCode>NumFac=FVGE586504FecFac=2024-09-09HorFac=00:06:04-05:00NitFac=890900652DocAdq=70322015ValFac=505871.52ValIva=96115.57ValOtroIm=0.00ValTolFac=601987.09cufe=3e16d2b8ace972dcb572df20fd684630b1b0adb9f52eaf6d9c85c6c044046ec1869a463001ed66555633757e1f9f630ehttps://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=3e16d2b8ace972dcb572df20fd684630b1b0adb9f52eaf6d9c85c6c044046ec1869a463001ed66555633757e1f9f630e</sts:QRCode>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="XMLDSIG-6D15C986CEF2F9E08F8B801A89C7FCBFABDA347D" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>dBwWhLEwpEbQr9CbxWG0A8V+neESLsLQj1xaiXTKy6w=</ds:DigestValue></ds:Reference><ds:Reference URI="#XMLDSIG-DC173BA458E2D1F874B4F0BE8CEE4F43B91C9F01"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>O/S/PxBueMxvtpWxEtN04etcDE7Flb5dFtpM5yo42VQ=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#XMLDSIG-2DC7E6194B1A5415146C637558505F0BDD4AE95A"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>asXDDQe4ZxMQzZTDF0BhPJMLXlKDF6Exgqkanu/VZ70=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="XMLDSIG-52FEBEBCD64DA87FDEEFD8307D9EF0DF6876AAD1">Wltzgy8OH6f6JgH7y9CsrhrA6RNcQgmNMRfeB77fHAdUkMhfrzpbxgKWCGdp5+izlY7ARw0RYa06RGGgkiEqsa+qE5Ed3ySoR35MtpThBxoy9uPRFJKnNQOV5zhSx+Eb5jm8G7nwPmhLo6ijE7ME+Ax2oyrRP1PWLHcTlMoY0Obl2Rlg2Lr8DPJmp8YJXFdIGuCdETkN4m0zO316jR2LiszTG7Xelj4hsTbdik6hdO66GJjTTWh42ke9zct8T6Vep7T/V5FuGuzIkt71hMIFZhlwoiOtVpQ2zlF+DqIMmW12FXyebczjqLcWFc95hwQtmaQes2qHPwTnSLQy4Pv5zw==</ds:SignatureValue><ds:KeyInfo Id="XMLDSIG-DC173BA458E2D1F874B4F0BE8CEE4F43B91C9F01"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties Target="#XMLDSIG-1384C75419B818DBA72EFC518E3A7A8906FEB01F"><xades:SignedProperties Id="XMLDSIG-2DC7E6194B1A5415146C637558505F0BDD4AE95A"><xades:SignedSignatureProperties><xades:SigningTime>2024-09-09T00:10:27.280-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>4npMCY2GM/8gNfmtS/rW8e4J8y0HcGuxuIIrCajxwvg=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v3,emailAddress=info@andesscd.com.co</ds:X509IssuerName><ds:X509SerialNumber>2358011972988222016</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>PbsKGMpB0A2Y9NAz6F8LkU5nR+ONJASyK9D/bRTdbZ0=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion,CN=ROOT CA ANDES SCD S.A.,emailAddress=info@andesscd.com.co</ds:X509IssuerName><ds:X509SerialNumber>4951343590990220136</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>Cs7emRwtXWVYHJrqS9eXEXfUcFyJJBqFhDFOetHu8ts=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion,CN=ROOT CA ANDES SCD S.A.,emailAddress=info@andesscd.com.co</ds:X509IssuerName><ds:X509SerialNumber>3184328748892787122</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>10</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>FVGE586504</cbc:ID>
+  <cbc:UUID schemeID="1" schemeName="CUFE-SHA384">3e16d2b8ace972dcb572df20fd684630b1b0adb9f52eaf6d9c85c6c044046ec1869a463001ed66555633757e1f9f630e</cbc:UUID>
+  <cbc:IssueDate>2024-09-09</cbc:IssueDate>
+  <cbc:IssueTime>00:06:04-05:00</cbc:IssueTime>
+  <cbc:DueDate>2024-10-09</cbc:DueDate>
+  <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+  <cbc:Note>XML generado para la factura: FVGE586504 del emisor INVESA S.A con identificación 890900652-3</cbc:Note>
+  <cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+  <cbc:LineCountNumeric>5</cbc:LineCountNumeric>
+  <cac:AccountingSupplierParty>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cbc:IndustryClassificationCode>2021</cbc:IndustryClassificationCode>
+      <cac:PartyName>
+        <cbc:Name>INVESA S.A</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>05266</cbc:ID>
+          <cbc:CityName>Envigado</cbc:CityName>
+          <cbc:PostalZone>05001</cbc:PostalZone>
+          <cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CARRERA 48 # 26 SUR - 181 IN 213</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>INVESA S.A</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="3" schemeName="31">890900652</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="48">R-99-PN</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>05266</cbc:ID>
+          <cbc:CityName>Envigado</cbc:CityName>
+          <cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CARRERA 48 # 26 SUR - 181 IN 213</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>INVESA S.A</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="3" schemeName="31">890900652</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:ID>FVGE</cbc:ID>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>INVESA S.A</cbc:Name>
+        <cbc:Telephone>3342727</cbc:Telephone>
+        <cbc:Telefax>3342727</cbc:Telefax>
+        <cbc:ElectronicMail>error.factura@invesa.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cbc:AdditionalAccountID>2</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeName="13" schemeAgencyID="195">70322015</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name>GONZALEZ CARMONA LEONARDO ANTONIO</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>05308</cbc:ID>
+          <cbc:CityName>Girardota</cbc:CityName>
+          <cbc:PostalZone>000000</cbc:PostalZone>
+          <cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CRA. 20 # 8 - 07 girardota</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>LEONARDO ANTONIO GONZALEZ CARMONA</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeName="13">70322015</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="48">R-99-PN</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>05308</cbc:ID>
+          <cbc:CityName>Girardota</cbc:CityName>
+          <cbc:PostalZone>000000</cbc:PostalZone>
+          <cbc:CountrySubentity>Antioquia</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CRA. 20 # 8 - 07 girardota</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>ZZ</cbc:ID>
+          <cbc:Name>No aplica</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>LEONARDO ANTONIO GONZALEZ CARMONA</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="7" schemeName="13">70322015</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:ID>FVGE</cbc:ID>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>LEONARDO ANTONIO GONZALEZ CARMONA</cbc:Name>
+        <cbc:Telephone>3004407120</cbc:Telephone>
+        <cbc:Telefax>3004407120</cbc:Telefax>
+        <cbc:ElectronicMail>depositoleonardo@gmail.com,revision.factura@invesa.com</cbc:ElectronicMail>
+      </cac:Contact>
+      <cac:Person>
+        <cbc:FirstName>LEONARDO ANTONIO GONZALEZ CARMONA</cbc:FirstName>
+      </cac:Person>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:PaymentMeans>
+    <cbc:ID>2</cbc:ID>
+    <cbc:PaymentMeansCode>1</cbc:PaymentMeansCode>
+    <cbc:PaymentDueDate>2024-10-09</cbc:PaymentDueDate>
+  </cac:PaymentMeans>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="COP">96115.57</cbc:TaxAmount>
+    <cbc:RoundingAmount currencyID="COP">0.00</cbc:RoundingAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="COP">505871.52</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="COP">96115.57</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="COP">505871.52</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="COP">505871.52</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="COP">601987.09</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="COP">0.00</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="COP">0.00</cbc:ChargeTotalAmount>
+    <cbc:PrepaidAmount currencyID="COP">0.00</cbc:PrepaidAmount>
+    <cbc:PayableAmount currencyID="COP">601987.09</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="94">4.000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">75835.7600</cbc:LineExtensionAmount>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">14408.79</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">75835.76</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">14408.79</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>ANTICORROSIVO CON ACABADO BLANCO 14 GAL</cbc:Description>
+      <cbc:PackSizeNumeric>0</cbc:PackSizeNumeric>
+      <cac:SellersItemIdentification>
+        <cbc:ID>44110H56</cbc:ID>
+        <cbc:ExtendedID>44110H56</cbc:ExtendedID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">Estándar de adopción del contribuyente</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">18958.9400</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="94">4.000000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="94">2.000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">120223.1800</cbc:LineExtensionAmount>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">22842.40</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">120223.18</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">22842.40</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>ANTICORROSIVO CON ACABADO BLANCO 11 GAL</cbc:Description>
+      <cbc:PackSizeNumeric>0</cbc:PackSizeNumeric>
+      <cac:SellersItemIdentification>
+        <cbc:ID>44110H57</cbc:ID>
+        <cbc:ExtendedID>44110H57</cbc:ExtendedID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">Estándar de adopción del contribuyente</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">60111.5900</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="94">2.000000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>3</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="94">4.000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">75835.7600</cbc:LineExtensionAmount>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">14408.79</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">75835.76</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">14408.79</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>ANTICORROSIVO CON ACABADO GRIS 14 GAL</cbc:Description>
+      <cbc:PackSizeNumeric>0</cbc:PackSizeNumeric>
+      <cac:SellersItemIdentification>
+        <cbc:ID>44154H56</cbc:ID>
+        <cbc:ExtendedID>44154H56</cbc:ExtendedID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">Estándar de adopción del contribuyente</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">18958.9400</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="94">4.000000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>4</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="94">6.000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">113753.6400</cbc:LineExtensionAmount>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">21613.19</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">113753.64</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">21613.19</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>ANTICORROSIVO CON ACABADO NEGRO 14</cbc:Description>
+      <cbc:PackSizeNumeric>0</cbc:PackSizeNumeric>
+      <cac:SellersItemIdentification>
+        <cbc:ID>44183H56</cbc:ID>
+        <cbc:ExtendedID>44183H56</cbc:ExtendedID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">Estándar de adopción del contribuyente</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">18958.9400</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="94">6.000000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>5</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="94">2.000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">120223.1800</cbc:LineExtensionAmount>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">22842.40</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">120223.18</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">22842.40</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>ANTICORROSIVO CON ACABADO NEGRO 11</cbc:Description>
+      <cbc:PackSizeNumeric>0</cbc:PackSizeNumeric>
+      <cac:SellersItemIdentification>
+        <cbc:ID>44183H57</cbc:ID>
+        <cbc:ExtendedID>44183H57</cbc:ExtendedID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">Estándar de adopción del contribuyente</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">60111.5900</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="94">2.000000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>
